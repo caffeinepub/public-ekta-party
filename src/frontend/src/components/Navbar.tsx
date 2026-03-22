@@ -2,10 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { SiWhatsapp } from "react-icons/si";
+
+const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Leadership", href: "#leadership" },
   { label: "Manifesto", href: "#manifesto" },
   { label: "Join Us", href: "#join" },
 ];
@@ -66,14 +70,11 @@ export function Navbar() {
               asChild
               size="sm"
               data-ocid="nav.primary_button"
-              className="ml-2 bg-[oklch(0.68_0.18_55)] hover:bg-[oklch(0.75_0.19_60)] text-white font-bold shadow-orange"
+              className="ml-2 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold shadow-md flex items-center gap-2"
             >
-              <a
-                href="https://wa.me/916001885969"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join Now
+              <a href={WA_GROUP} target="_blank" rel="noopener noreferrer">
+                <SiWhatsapp size={15} />
+                Join Group
               </a>
             </Button>
           </li>
@@ -111,12 +112,13 @@ export function Navbar() {
               ))}
               <li>
                 <a
-                  href="https://wa.me/916001885969"
+                  href={WA_GROUP}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block mt-2 py-2 px-3 bg-[oklch(0.68_0.18_55)] text-white font-bold rounded-md text-center"
+                  className="mt-2 py-2 px-3 bg-[oklch(0.46_0.18_145)] text-white font-bold rounded-md text-center flex items-center justify-center gap-2"
                 >
-                  Join Now
+                  <SiWhatsapp size={16} />
+                  Join WhatsApp Group
                 </a>
               </li>
             </ul>

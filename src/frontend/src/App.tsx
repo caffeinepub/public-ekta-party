@@ -3,6 +3,7 @@ import { AboutSection } from "./components/AboutSection";
 import { Footer } from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { JoinUsSection } from "./components/JoinUsSection";
+import { LeadershipSection } from "./components/LeadershipSection";
 import { ManifestoSection } from "./components/ManifestoSection";
 import { Navbar } from "./components/Navbar";
 import { SocialTeamSection } from "./components/SocialTeamSection";
@@ -17,6 +18,7 @@ export default function App() {
         <main>
           <HeroSection />
           <AboutSection />
+          <LeadershipSection />
           <ManifestoSection />
           <SocialTeamSection />
           <JoinUsSection />

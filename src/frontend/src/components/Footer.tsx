@@ -1,10 +1,6 @@
-import {
-  SiFacebook,
-  SiInstagram,
-  SiTelegram,
-  SiWhatsapp,
-  SiX,
-} from "react-icons/si";
+import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
+
+const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 
 const socialLinks = [
   {
@@ -14,12 +10,10 @@ const socialLinks = [
   },
   {
     Icon: SiInstagram,
-    href: "https://instagram.com/PEPSocial",
+    href: "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==",
     label: "Instagram",
   },
-  { Icon: SiWhatsapp, href: "https://wa.me/916001885969", label: "WhatsApp" },
-  { Icon: SiTelegram, href: "https://t.me/PEPSocial", label: "Telegram" },
-  { Icon: SiX, href: "https://x.com/PEPSocial", label: "X" },
+  { Icon: SiWhatsapp, href: WA_GROUP, label: "WhatsApp" },
 ];
 
 export function Footer() {
@@ -29,6 +23,29 @@ export function Footer() {
   return (
     <footer className="blue-gradient pt-14 pb-6">
       <div className="h-1 tricolor-bar w-full mb-10" />
+
+      {/* WhatsApp group join banner */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div className="bg-[oklch(0.46_0.18_145)] rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+          <div>
+            <p className="text-white font-black text-xl font-display">
+              Join Public Ekta Party on WhatsApp
+            </p>
+            <p className="text-white/80 text-sm mt-1">
+              Free election tickets available for every area. Join us today!
+            </p>
+          </div>
+          <a
+            href={WA_GROUP}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-white text-[oklch(0.46_0.18_145)] font-bold px-6 py-3 rounded-full hover:scale-105 transition-transform shadow-md whitespace-nowrap"
+          >
+            <SiWhatsapp size={20} />
+            Join Group Now
+          </a>
+        </div>
+      </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
@@ -46,22 +63,24 @@ export function Footer() {
                 P.E.P. – FOR THE PEOPLE
               </p>
               <p className="font-display italic text-white/60 text-sm mt-0.5">
-                नेता अपना, विकास सपना
+                "Sabka Saath, Sabka Haq, Sabka Vikas"
               </p>
             </div>
           </div>
 
           <nav className="flex flex-wrap justify-center gap-4">
-            {["Home", "About", "Manifesto", "Join Us"].map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase().replace(" ", "")}`}
-                className="text-white/70 hover:text-white text-sm font-semibold transition-colors"
-                data-ocid="footer.link"
-              >
-                {link}
-              </a>
-            ))}
+            {["Home", "About", "Leadership", "Manifesto", "Join Us"].map(
+              (link) => (
+                <a
+                  key={link}
+                  href={`#${link.toLowerCase().replace(" ", "")}`}
+                  className="text-white/70 hover:text-white text-sm font-semibold transition-colors"
+                  data-ocid="footer.link"
+                >
+                  {link}
+                </a>
+              ),
+            )}
           </nav>
 
           <div className="flex items-center gap-3">
@@ -82,7 +101,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
           <p className="text-white/50 text-sm">
-            © {year} Public Ekta Party. All rights reserved.
+            © {year} Public Ekta Party. All rights reserved. Founded 2026.
           </p>
           <p className="text-white/40 text-sm">
             Built with ❤️ using{" "}
