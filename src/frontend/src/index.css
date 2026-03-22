@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Party colors */
+    --party-blue: 0.31 0.15 264;
+    --party-orange: 0.68 0.18 55;
+    --party-saffron: 0.75 0.19 60;
+    --party-green: 0.46 0.18 145;
+
+    /* Semantic tokens */
+    --background: 0.99 0 0;
+    --foreground: 0.18 0.04 264;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.04 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.04 264;
+    --primary: 0.31 0.15 264;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.68 0.18 55;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.95 0.01 264;
+    --muted-foreground: 0.45 0.05 264;
+    --accent: 0.95 0.03 264;
+    --accent-foreground: 0.31 0.15 264;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.88 0.02 264;
+    --input: 0.88 0.02 264;
+    --ring: 0.31 0.15 264;
+    --chart-1: 0.31 0.15 264;
+    --chart-2: 0.68 0.18 55;
+    --chart-3: 0.46 0.18 145;
+    --chart-4: 0.75 0.19 60;
+    --chart-5: 0.6 0.12 200;
+    --sidebar: 0.31 0.15 264;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.68 0.18 55;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.25 0.12 264;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.4 0.08 264;
+    --sidebar-ring: 0.68 0.18 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Playfair Display", serif;
+  }
+
+  .tricolor-bar {
+    background: linear-gradient(
+      90deg,
+      oklch(0.75 0.19 60) 33.33%,
+      oklch(1 0 0) 33.33%,
+      oklch(1 0 0) 66.66%,
+      oklch(0.46 0.18 145) 66.66%
+    );
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 20, 60, 0.75) 0%,
+      rgba(10, 20, 60, 0.85) 60%,
+      rgba(10, 20, 60, 0.95) 100%
+    );
+  }
+
+  .blue-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.31 0.15 264) 0%,
+      oklch(0.22 0.12 264) 100%
+    );
+  }
+
+  .orange-gradient {
+    background: linear-gradient(
+      135deg,
+      oklch(0.68 0.18 55) 0%,
+      oklch(0.78 0.19 60) 100%
+    );
+  }
+
+  .party-card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-bold text-center;
+  }
+}
