@@ -1,16 +1,9 @@
 import { motion } from "motion/react";
-import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
+import { SiInstagram, SiWhatsapp } from "react-icons/si";
 
 const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 
 const socialHandles = [
-  {
-    icon: SiFacebook,
-    label: "Facebook",
-    handle: "/PEPSocial",
-    href: "https://facebook.com/PEPSocial",
-    color: "#1877F2",
-  },
   {
     icon: SiInstagram,
     label: "Instagram",

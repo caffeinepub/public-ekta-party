@@ -39,7 +39,7 @@ export function AboutSection() {
           className="text-center mb-14"
         >
           <img
-            src="/assets/uploads/IMG-20260305-WA0013-1--2.jpg"
+            src="/assets/uploads/IMG-20260305-WA0013-1-4-1.jpg"
             alt="Public Ekta Party Logo"
             className="h-28 w-28 rounded-full object-cover mx-auto mb-6 border-4 border-[oklch(0.31_0.15_264)] shadow-party"
           />

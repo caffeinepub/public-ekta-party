@@ -1,13 +1,8 @@
-import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
+import { SiInstagram, SiWhatsapp } from "react-icons/si";
 
 const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 
 const socialLinks = [
-  {
-    Icon: SiFacebook,
-    href: "https://facebook.com/PEPSocial",
-    label: "Facebook",
-  },
   {
     Icon: SiInstagram,
     href: "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==",
@@ -51,7 +46,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
           <div className="flex items-center gap-4">
             <img
-              src="/assets/uploads/IMG-20260305-WA0013-1--2.jpg"
+              src="/assets/uploads/IMG-20260305-WA0013-1-4-1.jpg"
               alt="Public Ekta Party Logo"
               className="h-16 w-16 rounded-full object-cover border-2 border-[oklch(0.68_0.18_55)]"
             />
@@ -96,6 +91,20 @@ export function Footer() {
                 <Icon size={16} />
               </a>
             ))}
+          </div>
+        </div>
+
+        {/* Legal Disclaimer */}
+        <div className="border-t border-white/10 pt-6 mb-4">
+          <div className="border border-white/20 bg-white/5 rounded-lg p-4 mb-4">
+            <p className="text-white/80 text-sm text-center leading-relaxed">
+              <strong className="text-white font-bold">
+                Legal Disclaimer:
+              </strong>{" "}
+              Public Ekta Party is currently an independent political movement,
+              not yet registered with the Election Commission of India. We are
+              currently building our community and gathering members.
+            </p>
           </div>
         </div>
 

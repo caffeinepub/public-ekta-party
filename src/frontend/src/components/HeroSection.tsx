@@ -8,7 +8,7 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/assets/uploads/IMG-20260305-WA0023-1--3.jpg')",
+        backgroundImage: "url('/assets/uploads/IMG-20260305-WA0023-1-2-1.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center top",
       }}
@@ -28,7 +28,7 @@ export function HeroSection() {
           className="mb-6"
         >
           <img
-            src="/assets/uploads/IMG-20260305-WA0013-1--2.jpg"
+            src="/assets/uploads/IMG-20260305-WA0013-1-4-1.jpg"
             alt="Public Ekta Party Logo"
             className="h-24 w-24 rounded-full object-cover mx-auto border-4 border-[oklch(0.68_0.18_55)] shadow-orange"
           />
