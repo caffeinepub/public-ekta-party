@@ -82,7 +82,7 @@ export function HeroSection() {
             className="bg-[oklch(0.68_0.18_55)] hover:bg-[oklch(0.75_0.19_60)] text-white font-bold text-lg px-10 py-6 rounded-full shadow-orange transition-transform hover:scale-105"
           >
             <a
-              href="https://wa.me/916001885969"
+              href="https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410"
               target="_blank"
               rel="noopener noreferrer"
             >
