@@ -1,6 +1,7 @@
 import { SiInstagram, SiWhatsapp } from "react-icons/si";
 
 const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
+const DAYAL_WA = "https://wa.me/918822997191";
 
 const socialLinks = [
   {
@@ -20,6 +21,12 @@ const socialLinks = [
     href: WA_GROUP,
     label: "Join Us in",
     sub: "WhatsApp Group",
+  },
+  {
+    Icon: SiWhatsapp,
+    href: DAYAL_WA,
+    label: "Dayal Sarkar",
+    sub: "State Head WhatsApp",
   },
 ];
 

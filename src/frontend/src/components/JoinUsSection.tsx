@@ -8,6 +8,8 @@ const INSTA_INDIA =
   "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==";
 const INSTA_ASSAM =
   "https://www.instagram.com/public_ekta_party_assam?utm_source=qr&igsh=ZDlpazdhb3JpYWtv";
+const RAHUL_WA = "https://wa.me/916001885969";
+const DAYAL_WA = "https://wa.me/918822997191";
 
 export function JoinUsSection() {
   return (
@@ -89,8 +91,9 @@ export function JoinUsSection() {
                 Contact Us
               </h3>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                {/* Rahul Gupta - WhatsApp only, no number displayed */}
                 <a
-                  href="https://wa.me/916001885969"
+                  href={RAHUL_WA}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-md"
@@ -100,11 +103,12 @@ export function JoinUsSection() {
                     <p className="text-xs opacity-80">
                       Rahul Gupta (Central Head)
                     </p>
-                    <p className="text-sm font-bold">+91 6001885969</p>
+                    <p className="text-sm font-bold">WhatsApp</p>
                   </div>
                 </a>
+                {/* Dayal Sarkar - clickable WhatsApp with number displayed */}
                 <a
-                  href="https://wa.me/918822997191"
+                  href={DAYAL_WA}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-md"
@@ -114,7 +118,7 @@ export function JoinUsSection() {
                     <p className="text-xs opacity-80">
                       Dayal Sarkar (State Head)
                     </p>
-                    <p className="text-sm font-bold">WhatsApp</p>
+                    <p className="text-sm font-bold">+91 8822997191</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">
