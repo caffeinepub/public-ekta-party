@@ -6,9 +6,16 @@ const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 const socialHandles = [
   {
     icon: SiInstagram,
-    label: "Instagram",
+    label: "Instagram – PEP India",
     handle: "@public_ekta_party",
     href: "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==",
+    color: "#E1306C",
+  },
+  {
+    icon: SiInstagram,
+    label: "Instagram – PEP Assam",
+    handle: "@public_ekta_party_assam",
+    href: "https://www.instagram.com/public_ekta_party_assam?utm_source=qr&igsh=ZDlpazdhb3JpYWtv",
     color: "#E1306C",
   },
   {

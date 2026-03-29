@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Heart, MapPin, Phone } from "lucide-react";
 import { motion } from "motion/react";
-import { SiWhatsapp } from "react-icons/si";
+import { SiInstagram, SiWhatsapp } from "react-icons/si";
 
 const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
+const INSTA_INDIA =
+  "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==";
+const INSTA_ASSAM =
+  "https://www.instagram.com/public_ekta_party_assam?utm_source=qr&igsh=ZDlpazdhb3JpYWtv";
 
 export function JoinUsSection() {
   return (
@@ -34,37 +38,86 @@ export function JoinUsSection() {
 
             <p className="text-[oklch(0.35_0.05_264)] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
               Jinko election khelna hai humare juriye — hum sabhi ko free
-              tickets har area se denge. Join our WhatsApp group and be part of
-              the movement!
+              tickets har area se denge. Join our WhatsApp group and follow us
+              on Instagram to stay updated!
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
-              <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">
-                <Phone size={18} className="text-[oklch(0.68_0.18_55)]" />
-                <span className="font-semibold">+91 6001885969</span>
-              </div>
-              <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">
-                <MapPin size={18} className="text-[oklch(0.31_0.15_264)]" />
-                <span className="font-semibold">Assam & All India</span>
-              </div>
+            {/* Join buttons */}
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center mb-10">
+              <Button
+                asChild
+                size="lg"
+                data-ocid="join.primary_button"
+                className="bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold text-base px-8 py-6 rounded-full shadow-lg transition-transform hover:scale-105 inline-flex items-center gap-3"
+              >
+                <a href={WA_GROUP} target="_blank" rel="noopener noreferrer">
+                  <SiWhatsapp size={22} />
+                  <span>Join Us in WhatsApp Group</span>
+                </a>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                data-ocid="join.insta_india_button"
+                className="border-[#E1306C] text-[#E1306C] hover:bg-[#E1306C] hover:text-white font-bold text-base px-8 py-6 rounded-full shadow-lg transition-transform hover:scale-105 inline-flex items-center gap-3"
+              >
+                <a href={INSTA_INDIA} target="_blank" rel="noopener noreferrer">
+                  <SiInstagram size={22} />
+                  <span>Follow on Instagram – PEP India</span>
+                </a>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                data-ocid="join.insta_assam_button"
+                className="border-[#E1306C] text-[#E1306C] hover:bg-[#E1306C] hover:text-white font-bold text-base px-8 py-6 rounded-full shadow-lg transition-transform hover:scale-105 inline-flex items-center gap-3"
+              >
+                <a href={INSTA_ASSAM} target="_blank" rel="noopener noreferrer">
+                  <SiInstagram size={22} />
+                  <span>Follow on Instagram – PEP Assam</span>
+                </a>
+              </Button>
             </div>
 
-            <Button
-              asChild
-              size="lg"
-              data-ocid="join.primary_button"
-              className="bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold text-lg px-12 py-7 rounded-full shadow-lg transition-transform hover:scale-105 inline-flex items-center gap-3"
-            >
-              <a href={WA_GROUP} target="_blank" rel="noopener noreferrer">
-                <SiWhatsapp size={24} />
-                <span>Join WhatsApp Group</span>
-              </a>
-            </Button>
-
-            <p className="mt-6 text-[oklch(0.55_0.04_264)] text-sm">
-              Click to join our official WhatsApp group. It's free and the first
-              step toward change.
-            </p>
+            {/* Contact Us */}
+            <div className="border-t border-[oklch(0.88_0.02_264)] pt-8">
+              <h3 className="font-display text-2xl font-black text-[oklch(0.31_0.15_264)] mb-5">
+                Contact Us
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a
+                  href="https://wa.me/916001885969"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-md"
+                >
+                  <SiWhatsapp size={18} />
+                  <div className="text-left">
+                    <p className="text-xs opacity-80">
+                      Rahul Gupta (Central Head)
+                    </p>
+                    <p className="text-sm font-bold">+91 6001885969</p>
+                  </div>
+                </a>
+                <div className="flex items-center gap-3 bg-[oklch(0.97_0.01_264)] border border-[oklch(0.88_0.02_264)] text-[oklch(0.35_0.05_264)] px-6 py-3 rounded-full shadow-sm">
+                  <Phone size={18} className="text-[oklch(0.68_0.18_55)]" />
+                  <div className="text-left">
+                    <p className="text-xs opacity-70">
+                      Dayal Sarkar (State Head)
+                    </p>
+                    <p className="text-sm font-bold">Assam Contact</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">
+                  <MapPin size={18} className="text-[oklch(0.31_0.15_264)]" />
+                  <span className="font-semibold">Assam &amp; All India</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="h-2 tricolor-bar w-full" />

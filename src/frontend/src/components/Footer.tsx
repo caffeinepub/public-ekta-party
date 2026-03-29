@@ -6,9 +6,21 @@ const socialLinks = [
   {
     Icon: SiInstagram,
     href: "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==",
-    label: "Instagram",
+    label: "PEP India",
+    sub: "Instagram",
   },
-  { Icon: SiWhatsapp, href: WA_GROUP, label: "WhatsApp" },
+  {
+    Icon: SiInstagram,
+    href: "https://www.instagram.com/public_ekta_party_assam?utm_source=qr&igsh=ZDlpazdhb3JpYWtv",
+    label: "PEP Assam",
+    sub: "Instagram",
+  },
+  {
+    Icon: SiWhatsapp,
+    href: WA_GROUP,
+    label: "Join Us in",
+    sub: "WhatsApp Group",
+  },
 ];
 
 export function Footer() {
@@ -78,17 +90,21 @@ export function Footer() {
             )}
           </nav>
 
-          <div className="flex items-center gap-3">
-            {socialLinks.map(({ Icon, href, label }) => (
+          {/* Social links with text labels */}
+          <div className="flex flex-wrap items-center gap-3 justify-center">
+            {socialLinks.map(({ Icon, href, label, sub }) => (
               <a
-                key={label}
+                key={label + sub}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={label}
-                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[oklch(0.68_0.18_55)] flex items-center justify-center text-white transition-all duration-200 hover:scale-110"
+                className="flex items-center gap-2 bg-white/10 hover:bg-[oklch(0.68_0.18_55)] px-4 py-2 rounded-full text-white transition-all duration-200 hover:scale-105"
               >
-                <Icon size={16} />
+                <Icon size={16} className="shrink-0" />
+                <div className="leading-tight">
+                  <p className="text-xs font-bold">{label}</p>
+                  <p className="text-[10px] opacity-80">{sub}</p>
+                </div>
               </a>
             ))}
           </div>
