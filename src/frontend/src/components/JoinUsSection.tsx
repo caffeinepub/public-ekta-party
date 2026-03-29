@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, MapPin, Phone } from "lucide-react";
+import { Heart, MapPin } from "lucide-react";
 import { motion } from "motion/react";
 import { SiInstagram, SiWhatsapp } from "react-icons/si";
 
@@ -103,15 +103,20 @@ export function JoinUsSection() {
                     <p className="text-sm font-bold">+91 6001885969</p>
                   </div>
                 </a>
-                <div className="flex items-center gap-3 bg-[oklch(0.97_0.01_264)] border border-[oklch(0.88_0.02_264)] text-[oklch(0.35_0.05_264)] px-6 py-3 rounded-full shadow-sm">
-                  <Phone size={18} className="text-[oklch(0.68_0.18_55)]" />
+                <a
+                  href="https://wa.me/918822997191"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-md"
+                >
+                  <SiWhatsapp size={18} />
                   <div className="text-left">
-                    <p className="text-xs opacity-70">
+                    <p className="text-xs opacity-80">
                       Dayal Sarkar (State Head)
                     </p>
-                    <p className="text-sm font-bold">Assam Contact</p>
+                    <p className="text-sm font-bold">WhatsApp</p>
                   </div>
-                </div>
+                </a>
                 <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">
                   <MapPin size={18} className="text-[oklch(0.31_0.15_264)]" />
                   <span className="font-semibold">Assam &amp; All India</span>
