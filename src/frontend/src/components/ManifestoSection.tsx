@@ -132,9 +132,12 @@ const manifestoCategories: ManifestoCategory[] = [
       "At least one professional institute (BBA, BCA, B.Tech, MBBS etc.) in every district.",
       "Arts, Science, and Commerce streams available across Assam.",
       "More government schools and colleges in rural and village areas.",
+      "Free government coaching centers for competitive exams: SSC (CGL, CHSL, CPO, MTS), ADRE, APSC, UPSC, JEE, NEET, CAT, and other major examinations.",
       "Government-supported Spoken English and communication training centers.",
       "Smart classrooms, digital boards, computer labs and internet in government schools.",
       "Expanded scholarships for economically weaker but talented students.",
+      "Semester exam fees will be removed in government colleges.",
+      "Free admission in government colleges for economically weaker students.",
     ],
   },
   {

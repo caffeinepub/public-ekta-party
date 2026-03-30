@@ -7,7 +7,6 @@ const leaders = [
     role: "Central Head",
     party: "Public Ekta Party (PEP)",
     image: "/assets/uploads/IMG-20260307-WA0023-1-2-1.jpg",
-    phone: "+91 6001885969",
     whatsapp: "https://wa.me/916001885969",
   },
   {
@@ -15,8 +14,7 @@ const leaders = [
     role: "State Head",
     party: "Public Ekta Party (PEP) – Assam",
     image: "/assets/uploads/IMG-20260305-WA0023-1-2-1.jpg",
-    phone: null,
-    whatsapp: null,
+    whatsapp: "https://wa.me/918822997191",
   },
 ];
 
@@ -69,22 +67,15 @@ export function LeadershipSection() {
                 <p className="text-[oklch(0.45_0.04_264)] text-sm mb-4">
                   {leader.party}
                 </p>
-                {leader.phone && (
-                  <p className="text-[oklch(0.35_0.05_264)] font-semibold text-sm mb-4">
-                    📞 {leader.phone}
-                  </p>
-                )}
-                {leader.whatsapp && (
-                  <a
-                    href={leader.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-5 py-2.5 rounded-full text-sm transition-all hover:scale-105"
-                  >
-                    <SiWhatsapp size={16} />
-                    Contact on WhatsApp
-                  </a>
-                )}
+                <a
+                  href={leader.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white font-bold px-5 py-2.5 rounded-full text-sm transition-all hover:scale-105"
+                >
+                  <SiWhatsapp size={16} />
+                  Contact on WhatsApp
+                </a>
               </div>
             </motion.div>
           ))}

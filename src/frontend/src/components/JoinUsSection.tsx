@@ -106,7 +106,7 @@ export function JoinUsSection() {
                     <p className="text-sm font-bold">WhatsApp</p>
                   </div>
                 </a>
-                {/* Dayal Sarkar - clickable WhatsApp with number displayed */}
+                {/* Dayal Sarkar - WhatsApp only, no number displayed */}
                 <a
                   href={DAYAL_WA}
                   target="_blank"
@@ -118,7 +118,7 @@ export function JoinUsSection() {
                     <p className="text-xs opacity-80">
                       Dayal Sarkar (State Head)
                     </p>
-                    <p className="text-sm font-bold">+91 8822997191</p>
+                    <p className="text-sm font-bold">WhatsApp</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-2 text-[oklch(0.35_0.05_264)]">

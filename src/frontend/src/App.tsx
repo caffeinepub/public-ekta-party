@@ -13,6 +13,7 @@ const queryClient = new QueryClient();
 
 const WA_GROUP = "https://chat.whatsapp.com/LaKgkOtuEBLGbQwIco5410";
 const RAHUL_WA = "https://wa.me/916001885969";
+const DAYAL_WA = "https://wa.me/918822997191";
 const INSTA_INDIA =
   "https://www.instagram.com/public_ekta_party?igsh=MTYwM250N2RxdXFmcg==";
 const INSTA_ASSAM =
@@ -49,6 +50,15 @@ export default function App() {
               >
                 <SiWhatsapp size={13} />
                 Rahul Gupta WhatsApp
+              </a>
+              <a
+                href={DAYAL_WA}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 bg-[oklch(0.46_0.18_145)] hover:bg-[oklch(0.4_0.15_145)] text-white text-xs font-bold px-3 py-1.5 rounded-full transition-all hover:scale-105"
+              >
+                <SiWhatsapp size={13} />
+                Dayal Sarkar WhatsApp
               </a>
               <a
                 href={INSTA_INDIA}
